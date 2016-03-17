@@ -27,15 +27,6 @@ window.onload = function() {
     setDarkTheme(true);
     //sets show mass to true on extension load
     setShowMass(true);
- 
-    //Cell skin
-    image = new Image();
-    image.crossOrigin = 'anonymous';
-    image.src = 'http://i.imgur.com/dOFpphQ.png';
-    window.agar.hooks.cellSkin = function(cell, old_skin) {
-        if (cell.name == "Bot") return image;
-        return old_skin;
-}    
     
     
     image = new Image()
